@@ -1,0 +1,7 @@
+you could use the function rdbuf to access the u
+nderlying buffer. You stream the rdbuf directly to another
+stream without copying. But you can not get an point
+r to the inner buffer since the rdb
+uf does not need to be implemented that way. Howev
+er you could implem
+ent your own rdbuf which allows access to the inner buffer.
